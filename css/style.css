@@ -118,4 +118,23 @@ main{
     width: 210px;
     margin-left: 5px;
 }
-  
+.social-media{
+    width:20px;
+    height: 20px;
+}
+.contact img, .payment img{
+    width: 16px;
+    height: 16px;
+}
+.about{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+footer{
+    margin: 30px;
+}
+.contact, .payment, .social-media{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
