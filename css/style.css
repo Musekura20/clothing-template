@@ -16,6 +16,7 @@
 .full-web{
     display: grid;
     grid-template-columns: 300px 1fr;
+    align-items: start;
 }
 
 .big-gray{
@@ -41,7 +42,13 @@
     margin: 120px 0px;
 }
 .aside{
-    margin:50px;
+    position: sticky;
+    top: 0;
+    height:100vh;
+    padding:50px;
+    margin:0;
+    overflow-y: auto;
+
 }
 .small-gray{
     font-size: medium;
@@ -101,6 +108,7 @@
 }
 main{
     margin: 30px;
+    margin-bottom: 0;
 }
 .shop{
     color:var(--white);
@@ -132,9 +140,73 @@ main{
 }
 footer{
     margin: 30px;
+    margin-top: 0;
 }
 .contact, .payment, .social-media{
     display: flex;
     align-items: center;
     gap: 5px;
+}
+.Subscribe{
+    background-color: var(--black);
+    padding: 50px 20px;
+}
+.Subscribe h1, .Subscribe p, .Subscribe button {
+    color: var(--white)
+}
+.Subscribe button{
+    background-color: red;
+    padding: 12px 18px;
+    border: none;
+    margin-top: 20px;
+}
+.Subscribe input{
+    padding: 14px 16px;
+    width: 800px;
+}
+.Subscribe p, button, input {
+    font-size: large;
+}
+.about{
+    background-color: var(--light-gray);
+    padding: 80px 0px;
+}
+.about-links a{
+    color: var(--black);
+
+}
+.about-links{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.store-info{
+    display: flex;
+    flex-direction: column;
+    gap:15px;
+}
+.contact-info{
+    display: flex;
+    flex-direction: column;
+}
+.contact-info input, .contact-info button{
+    font-size: small;
+    padding: 10px;
+}
+.contact-info button{
+    padding: 10px;
+    background-color: var(--black);
+    color: var(--white)
+}
+.contact-info h2, .contact-info p{
+    text-align: center;
+}
+.black-footer{
+    background-color: var(--black);
+    color: var(--white);
+    padding: 40px;
+    text-align: center;
+}
+.black-footer a{
+     color:white;
 }
